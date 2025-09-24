@@ -107,6 +107,7 @@ The script will:
   - `static.env` with your username and password
   - `session.env` with your Studio base and proxy host
 - Create a launcher at `~/start_labelstudio.sh`.
+
 Now run:
 `~/start_labelstudio.sh` in your terminal and this will:
 
