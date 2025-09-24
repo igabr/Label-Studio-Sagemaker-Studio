@@ -88,7 +88,6 @@ cat > "$HOME/start_labelstudio.sh" <<'EOLAUNCH'
 set -euo pipefail
 
 # Load conda (no conda init)
-# shellcheck disable=SC1091
 source /opt/conda/etc/profile.d/conda.sh
 conda activate "$HOME/conda-envs/labelstudio"
 
