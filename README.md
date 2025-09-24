@@ -2,7 +2,11 @@
 
 Run Label Studio inside SageMaker Studio with a persistent conda env and the Studio proxy.
 
-This repo is meant to get you started with Label Studio for quick experimentation in Sagemaker Studio notebooks - I specifically use the quick start template from the Sagemaker Studio JupyterLab Space Templates.
+This repo is meant to get you started with Label Studio for quick experimentation in Sagemaker Studio notebooks.
+
+**Note:** Sagemaker Studio, by default, does not allow docker access without some prior configuration during domain creation and then subsequent docker installation on the instance (see docs [here](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-local-get-started.html)).
+
+As such, the following approach bypasses the need for all of that, by simply following a pip installation route, within a conda environment, and correctly configuring sagemaker studio's JupyterLab proxy to allow access to Label Studio.
 
 ## What you’ll upload to your Studio Notebook.
 - `bootstrap_labelstudio.sh`
